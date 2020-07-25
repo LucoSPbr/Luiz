@@ -7,39 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A651F6D924C7316F0040E4DE /* CompraRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651F6D824C7316F0040E4DE /* CompraRegisterViewController.swift */; };
-		A651F6DB24C731A70040E4DE /* EstadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651F6DA24C731A70040E4DE /* EstadosViewController.swift */; };
-		A679533824C1E93800754A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679533724C1E93800754A13 /* AppDelegate.swift */; };
-		A679533A24C1E93800754A13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679533924C1E93800754A13 /* SceneDelegate.swift */; };
-		A679533D24C1E93900754A13 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A679533B24C1E93900754A13 /* ComprasUSA.xcdatamodeld */; };
-		A679533F24C1E93900754A13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679533E24C1E93900754A13 /* ContentView.swift */; };
-		A679534124C1E93900754A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A679534024C1E93900754A13 /* Assets.xcassets */; };
-		A679534424C1E93900754A13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A679534324C1E93900754A13 /* Preview Assets.xcassets */; };
-		A679534724C1E93900754A13 /* Abertura.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A679534524C1E93900754A13 /* Abertura.storyboard */; };
-		A679535124C1EE4700754A13 /* CadastrarProduto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A679535024C1EE4700754A13 /* CadastrarProduto.storyboard */; };
-		A679535324C1EE6500754A13 /* Ajustes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A679535224C1EE6500754A13 /* Ajustes.storyboard */; };
-		A679535524C1EE9000754A13 /* TotalCompras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A679535424C1EE9000754A13 /* TotalCompras.storyboard */; };
+		A661D6F524CCD4C600E59AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D6F424CCD4C600E59AE0 /* AppDelegate.swift */; };
+		A661D6F724CCD4C600E59AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D6F624CCD4C600E59AE0 /* SceneDelegate.swift */; };
+		A661D6FA24CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A661D6F824CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld */; };
+		A661D6FC24CCD4C600E59AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D6FB24CCD4C600E59AE0 /* ContentView.swift */; };
+		A661D6FE24CCD4C700E59AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A661D6FD24CCD4C700E59AE0 /* Assets.xcassets */; };
+		A661D70124CCD4C700E59AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A661D70024CCD4C700E59AE0 /* Preview Assets.xcassets */; };
+		A661D70424CCD4C700E59AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A661D70224CCD4C700E59AE0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A651F6D824C7316F0040E4DE /* CompraRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraRegisterViewController.swift; sourceTree = "<group>"; };
-		A651F6DA24C731A70040E4DE /* EstadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadosViewController.swift; sourceTree = "<group>"; };
-		A679533424C1E93800754A13 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A679533724C1E93800754A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A679533924C1E93800754A13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A679533C24C1E93900754A13 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
-		A679533E24C1E93900754A13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A679534024C1E93900754A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A679534324C1E93900754A13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A679534624C1E93900754A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Abertura.storyboard; sourceTree = "<group>"; };
-		A679534824C1E93900754A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A679535024C1EE4700754A13 /* CadastrarProduto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CadastrarProduto.storyboard; sourceTree = "<group>"; };
-		A679535224C1EE6500754A13 /* Ajustes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ajustes.storyboard; sourceTree = "<group>"; };
-		A679535424C1EE9000754A13 /* TotalCompras.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TotalCompras.storyboard; sourceTree = "<group>"; };
+		A661D6F124CCD4C600E59AE0 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A661D6F424CCD4C600E59AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A661D6F624CCD4C600E59AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A661D6F924CCD4C600E59AE0 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
+		A661D6FB24CCD4C600E59AE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A661D6FD24CCD4C700E59AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A661D70024CCD4C700E59AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A661D70324CCD4C700E59AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A661D70524CCD4C700E59AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A679533124C1E93800754A13 /* Frameworks */ = {
+		A661D6EE24CCD4C600E59AE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,68 +39,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A679532B24C1E93800754A13 = {
+		A661D6E824CCD4C600E59AE0 = {
 			isa = PBXGroup;
 			children = (
-				A679533624C1E93800754A13 /* ComprasUSA */,
-				A679533524C1E93800754A13 /* Products */,
+				A661D6F324CCD4C600E59AE0 /* ComprasUSA */,
+				A661D6F224CCD4C600E59AE0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A679533524C1E93800754A13 /* Products */ = {
+		A661D6F224CCD4C600E59AE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A679533424C1E93800754A13 /* ComprasUSA.app */,
+				A661D6F124CCD4C600E59AE0 /* ComprasUSA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A679533624C1E93800754A13 /* ComprasUSA */ = {
+		A661D6F324CCD4C600E59AE0 /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
-				A6B9C50424CC68D900D5EFCE /* Storyboards */,
-				A679533724C1E93800754A13 /* AppDelegate.swift */,
-				A679533924C1E93800754A13 /* SceneDelegate.swift */,
-				A679533E24C1E93900754A13 /* ContentView.swift */,
-				A679534024C1E93900754A13 /* Assets.xcassets */,
-				A679534824C1E93900754A13 /* Info.plist */,
-				A679533B24C1E93900754A13 /* ComprasUSA.xcdatamodeld */,
-				A679534224C1E93900754A13 /* Preview Content */,
-				A651F6D824C7316F0040E4DE /* CompraRegisterViewController.swift */,
-				A651F6DA24C731A70040E4DE /* EstadosViewController.swift */,
+				A661D6F424CCD4C600E59AE0 /* AppDelegate.swift */,
+				A661D6F624CCD4C600E59AE0 /* SceneDelegate.swift */,
+				A661D6FB24CCD4C600E59AE0 /* ContentView.swift */,
+				A661D6FD24CCD4C700E59AE0 /* Assets.xcassets */,
+				A661D70224CCD4C700E59AE0 /* LaunchScreen.storyboard */,
+				A661D70524CCD4C700E59AE0 /* Info.plist */,
+				A661D6F824CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld */,
+				A661D6FF24CCD4C700E59AE0 /* Preview Content */,
 			);
 			path = ComprasUSA;
 			sourceTree = "<group>";
 		};
-		A679534224C1E93900754A13 /* Preview Content */ = {
+		A661D6FF24CCD4C700E59AE0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A679534324C1E93900754A13 /* Preview Assets.xcassets */,
+				A661D70024CCD4C700E59AE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A6B9C50424CC68D900D5EFCE /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				A679534524C1E93900754A13 /* Abertura.storyboard */,
-				A679535224C1EE6500754A13 /* Ajustes.storyboard */,
-				A679535024C1EE4700754A13 /* CadastrarProduto.storyboard */,
-				A679535424C1EE9000754A13 /* TotalCompras.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A679533324C1E93800754A13 /* ComprasUSA */ = {
+		A661D6F024CCD4C600E59AE0 /* ComprasUSA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A679534B24C1E93900754A13 /* Build configuration list for PBXNativeTarget "ComprasUSA" */;
+			buildConfigurationList = A661D70824CCD4C700E59AE0 /* Build configuration list for PBXNativeTarget "ComprasUSA" */;
 			buildPhases = (
-				A679533024C1E93800754A13 /* Sources */,
-				A679533124C1E93800754A13 /* Frameworks */,
-				A679533224C1E93800754A13 /* Resources */,
+				A661D6ED24CCD4C600E59AE0 /* Sources */,
+				A661D6EE24CCD4C600E59AE0 /* Frameworks */,
+				A661D6EF24CCD4C600E59AE0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -118,25 +95,25 @@
 			);
 			name = ComprasUSA;
 			productName = ComprasUSA;
-			productReference = A679533424C1E93800754A13 /* ComprasUSA.app */;
+			productReference = A661D6F124CCD4C600E59AE0 /* ComprasUSA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A679532C24C1E93800754A13 /* Project object */ = {
+		A661D6E924CCD4C600E59AE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = FIAP;
 				TargetAttributes = {
-					A679533324C1E93800754A13 = {
+					A661D6F024CCD4C600E59AE0 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = A679532F24C1E93800754A13 /* Build configuration list for PBXProject "ComprasUSA" */;
+			buildConfigurationList = A661D6EC24CCD4C600E59AE0 /* Build configuration list for PBXProject "ComprasUSA" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,61 +121,56 @@
 				en,
 				Base,
 			);
-			mainGroup = A679532B24C1E93800754A13;
-			productRefGroup = A679533524C1E93800754A13 /* Products */;
+			mainGroup = A661D6E824CCD4C600E59AE0;
+			productRefGroup = A661D6F224CCD4C600E59AE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A679533324C1E93800754A13 /* ComprasUSA */,
+				A661D6F024CCD4C600E59AE0 /* ComprasUSA */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A679533224C1E93800754A13 /* Resources */ = {
+		A661D6EF24CCD4C600E59AE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A679535524C1EE9000754A13 /* TotalCompras.storyboard in Resources */,
-				A679535124C1EE4700754A13 /* CadastrarProduto.storyboard in Resources */,
-				A679534724C1E93900754A13 /* Abertura.storyboard in Resources */,
-				A679535324C1EE6500754A13 /* Ajustes.storyboard in Resources */,
-				A679534424C1E93900754A13 /* Preview Assets.xcassets in Resources */,
-				A679534124C1E93900754A13 /* Assets.xcassets in Resources */,
+				A661D70424CCD4C700E59AE0 /* LaunchScreen.storyboard in Resources */,
+				A661D70124CCD4C700E59AE0 /* Preview Assets.xcassets in Resources */,
+				A661D6FE24CCD4C700E59AE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A679533024C1E93800754A13 /* Sources */ = {
+		A661D6ED24CCD4C600E59AE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A679533824C1E93800754A13 /* AppDelegate.swift in Sources */,
-				A679533D24C1E93900754A13 /* ComprasUSA.xcdatamodeld in Sources */,
-				A651F6DB24C731A70040E4DE /* EstadosViewController.swift in Sources */,
-				A679533F24C1E93900754A13 /* ContentView.swift in Sources */,
-				A651F6D924C7316F0040E4DE /* CompraRegisterViewController.swift in Sources */,
-				A679533A24C1E93800754A13 /* SceneDelegate.swift in Sources */,
+				A661D6F524CCD4C600E59AE0 /* AppDelegate.swift in Sources */,
+				A661D6FA24CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld in Sources */,
+				A661D6FC24CCD4C600E59AE0 /* ContentView.swift in Sources */,
+				A661D6F724CCD4C600E59AE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A679534524C1E93900754A13 /* Abertura.storyboard */ = {
+		A661D70224CCD4C700E59AE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A679534624C1E93900754A13 /* Base */,
+				A661D70324CCD4C700E59AE0 /* Base */,
 			);
-			name = Abertura.storyboard;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A679534924C1E93900754A13 /* Debug */ = {
+		A661D70624CCD4C700E59AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		A679534A24C1E93900754A13 /* Release */ = {
+		A661D70724CCD4C700E59AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,12 +284,13 @@
 			};
 			name = Release;
 		};
-		A679534C24C1E93900754A13 /* Debug */ = {
+		A661D70924CCD4C700E59AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ComprasUSA/Preview Content\"";
+				DEVELOPMENT_TEAM = F6HM2R394B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ComprasUSA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,12 +304,13 @@
 			};
 			name = Debug;
 		};
-		A679534D24C1E93900754A13 /* Release */ = {
+		A661D70A24CCD4C700E59AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ComprasUSA/Preview Content\"";
+				DEVELOPMENT_TEAM = F6HM2R394B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ComprasUSA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,20 +327,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A679532F24C1E93800754A13 /* Build configuration list for PBXProject "ComprasUSA" */ = {
+		A661D6EC24CCD4C600E59AE0 /* Build configuration list for PBXProject "ComprasUSA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A679534924C1E93900754A13 /* Debug */,
-				A679534A24C1E93900754A13 /* Release */,
+				A661D70624CCD4C700E59AE0 /* Debug */,
+				A661D70724CCD4C700E59AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A679534B24C1E93900754A13 /* Build configuration list for PBXNativeTarget "ComprasUSA" */ = {
+		A661D70824CCD4C700E59AE0 /* Build configuration list for PBXNativeTarget "ComprasUSA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A679534C24C1E93900754A13 /* Debug */,
-				A679534D24C1E93900754A13 /* Release */,
+				A661D70924CCD4C700E59AE0 /* Debug */,
+				A661D70A24CCD4C700E59AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -374,17 +348,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A679533B24C1E93900754A13 /* ComprasUSA.xcdatamodeld */ = {
+		A661D6F824CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A679533C24C1E93900754A13 /* ComprasUSA.xcdatamodel */,
+				A661D6F924CCD4C600E59AE0 /* ComprasUSA.xcdatamodel */,
 			);
-			currentVersion = A679533C24C1E93900754A13 /* ComprasUSA.xcdatamodel */;
+			currentVersion = A661D6F924CCD4C600E59AE0 /* ComprasUSA.xcdatamodel */;
 			path = ComprasUSA.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = A679532C24C1E93800754A13 /* Project object */;
+	rootObject = A661D6E924CCD4C600E59AE0 /* Project object */;
 }
