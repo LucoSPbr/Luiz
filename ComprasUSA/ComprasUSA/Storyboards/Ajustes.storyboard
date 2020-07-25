@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AjustesVC-->
+        <scene sceneID="pK2-Cl-nN2">
+            <objects>
+                <viewController id="5zk-O4-kiO" userLabel="AjustesVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8t-yJ-g2g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cotação do dólar (R$):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qF-mq-bsk">
+                                <rect key="frame" x="20" y="112" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqJ-J4-gYa">
+                                <rect key="frame" x="233" y="105" width="122" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="IOF (%):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htA-fo-HsV">
+                                <rect key="frame" x="20" y="160" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTQ-f2-ASt">
+                                <rect key="frame" x="233" y="153" width="122" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Impostos por estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unD-vz-0VN">
+                                <rect key="frame" x="20" y="218" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JqM-If-Iki">
+                                <rect key="frame" x="20" y="262" width="335" height="274"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwn-5S-CFc">
+                                <rect key="frame" x="240" y="551" width="115" height="30"/>
+                                <state key="normal" title="Adicionar estado"/>
+                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGz-XL-EXE">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Compras" image="bag" catalog="system" selectedImage="bag" id="11c-o2-htF"/>
+                                    <tabBarItem title="Ajustes" image="gear" catalog="system" selectedImage="gear" id="qIF-4F-BK8"/>
+                                    <tabBarItem title="Total de Compra" image="bag" catalog="system" id="NHM-Zv-VwT"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="unD-vz-0VN" firstAttribute="leading" secondItem="8NU-l6-5ra" secondAttribute="leading" constant="20" id="1Yy-zF-u6M"/>
+                            <constraint firstItem="JqM-If-Iki" firstAttribute="leading" secondItem="8NU-l6-5ra" secondAttribute="leading" constant="20" id="BPX-sb-cWt"/>
+                            <constraint firstItem="GqJ-J4-gYa" firstAttribute="leading" secondItem="5qF-mq-bsk" secondAttribute="trailing" constant="8" id="GWB-br-yA3"/>
+                            <constraint firstItem="JqM-If-Iki" firstAttribute="top" secondItem="unD-vz-0VN" secondAttribute="bottom" constant="20" id="HMB-ud-K7q"/>
+                            <constraint firstItem="GTQ-f2-ASt" firstAttribute="leading" secondItem="htA-fo-HsV" secondAttribute="trailing" constant="8" id="MvA-3q-4wh"/>
+                            <constraint firstItem="GTQ-f2-ASt" firstAttribute="top" secondItem="GqJ-J4-gYa" secondAttribute="bottom" constant="14" id="Wkd-3t-MtS"/>
+                            <constraint firstItem="8NU-l6-5ra" firstAttribute="trailing" secondItem="JqM-If-Iki" secondAttribute="trailing" constant="20" id="Yoz-Nz-gpd"/>
+                            <constraint firstItem="unD-vz-0VN" firstAttribute="top" secondItem="GTQ-f2-ASt" secondAttribute="bottom" constant="31" id="eOH-MI-8kN"/>
+                            <constraint firstItem="8NU-l6-5ra" firstAttribute="trailing" secondItem="unD-vz-0VN" secondAttribute="trailing" constant="20" id="nAO-TD-55U"/>
+                            <constraint firstItem="xwn-5S-CFc" firstAttribute="top" secondItem="JqM-If-Iki" secondAttribute="bottom" constant="15" id="vOF-XO-IBT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8NU-l6-5ra"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MZ-Up-4gB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-159.67016491754123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>
