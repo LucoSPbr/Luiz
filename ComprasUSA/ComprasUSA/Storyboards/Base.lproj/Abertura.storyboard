@@ -42,15 +42,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="311"/>
+            <point key="canvasLocation" x="110" y="-269"/>
         </scene>
         <!--CadastrarProduto-->
         <scene sceneID="ogB-eJ-D4T">
             <objects>
-                <viewControllerPlaceholder storyboardName="CadastrarProduto" id="4Vu-gW-92I" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="CadastrarProdutoID" storyboardName="CadastrarProduto" id="4Vu-gW-92I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OUY-73-u0W"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUb-dv-rGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="311"/>
+            <point key="canvasLocation" x="665" y="-270"/>
         </scene>
     </scenes>
     <resources>
