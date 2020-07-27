@@ -17,7 +17,11 @@
 		A661D70C24CCE34B00E59AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D70B24CCE34B00E59AE0 /* ViewController.swift */; };
 		A661D70E24CCEBE100E59AE0 /* ComprasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D70D24CCEBE100E59AE0 /* ComprasTableViewController.swift */; };
 		A661D71024CCF0B600E59AE0 /* Compra.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D70F24CCF0B600E59AE0 /* Compra.swift */; };
-		A661D71224CCF78700E59AE0 /* CompraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71124CCF78700E59AE0 /* CompraTableViewCell.swift */; };
+		A661D71424CDB5B800E59AE0 /* CompraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71324CDB5B800E59AE0 /* CompraTableViewCell.swift */; };
+		A661D71624CDC51B00E59AE0 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71524CDC51B00E59AE0 /* CompraViewController.swift */; };
+		A661D71824CDD7B300E59AE0 /* CompraRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71724CDD7B300E59AE0 /* CompraRegisterViewController.swift */; };
+		A661D71A24CDD7D700E59AE0 /* EstadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71924CDD7D700E59AE0 /* EstadosViewController.swift */; };
+		A661D71C24CE57C400E59AE0 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661D71B24CE57C400E59AE0 /* UIViewController+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +37,11 @@
 		A661D70B24CCE34B00E59AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A661D70D24CCEBE100E59AE0 /* ComprasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewController.swift; sourceTree = "<group>"; };
 		A661D70F24CCF0B600E59AE0 /* Compra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compra.swift; sourceTree = "<group>"; };
-		A661D71124CCF78700E59AE0 /* CompraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraTableViewCell.swift; sourceTree = "<group>"; };
+		A661D71324CDB5B800E59AE0 /* CompraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraTableViewCell.swift; sourceTree = "<group>"; };
+		A661D71524CDC51B00E59AE0 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
+		A661D71724CDD7B300E59AE0 /* CompraRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraRegisterViewController.swift; sourceTree = "<group>"; };
+		A661D71924CDD7D700E59AE0 /* EstadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadosViewController.swift; sourceTree = "<group>"; };
+		A661D71B24CE57C400E59AE0 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,12 @@
 				A661D6FB24CCD4C600E59AE0 /* ContentView.swift */,
 				A661D70B24CCE34B00E59AE0 /* ViewController.swift */,
 				A661D70D24CCEBE100E59AE0 /* ComprasTableViewController.swift */,
-				A661D71124CCF78700E59AE0 /* CompraTableViewCell.swift */,
+				A661D71524CDC51B00E59AE0 /* CompraViewController.swift */,
+				A661D71324CDB5B800E59AE0 /* CompraTableViewCell.swift */,
 				A661D70F24CCF0B600E59AE0 /* Compra.swift */,
+				A661D71724CDD7B300E59AE0 /* CompraRegisterViewController.swift */,
+				A661D71924CDD7D700E59AE0 /* EstadosViewController.swift */,
+				A661D71B24CE57C400E59AE0 /* UIViewController+CoreData.swift */,
 				A661D70224CCD4C700E59AE0 /* ComprasUSA.storyboard */,
 				A661D6FD24CCD4C700E59AE0 /* Assets.xcassets */,
 				A661D70524CCD4C700E59AE0 /* Info.plist */,
@@ -162,11 +174,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A661D70C24CCE34B00E59AE0 /* ViewController.swift in Sources */,
-				A661D71224CCF78700E59AE0 /* CompraTableViewCell.swift in Sources */,
+				A661D71424CDB5B800E59AE0 /* CompraTableViewCell.swift in Sources */,
 				A661D6F524CCD4C600E59AE0 /* AppDelegate.swift in Sources */,
+				A661D71824CDD7B300E59AE0 /* CompraRegisterViewController.swift in Sources */,
 				A661D6FA24CCD4C600E59AE0 /* ComprasUSA.xcdatamodeld in Sources */,
 				A661D6FC24CCD4C600E59AE0 /* ContentView.swift in Sources */,
 				A661D70E24CCEBE100E59AE0 /* ComprasTableViewController.swift in Sources */,
+				A661D71624CDC51B00E59AE0 /* CompraViewController.swift in Sources */,
+				A661D71A24CDD7D700E59AE0 /* EstadosViewController.swift in Sources */,
+				A661D71C24CE57C400E59AE0 /* UIViewController+CoreData.swift in Sources */,
 				A661D6F724CCD4C600E59AE0 /* SceneDelegate.swift in Sources */,
 				A661D71024CCF0B600E59AE0 /* Compra.swift in Sources */,
 			);

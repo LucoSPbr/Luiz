@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Compra: Codable {
-    let nome: String
-    let estado: String
-    let valor: Double
-    let cartao: Bool
-    let imagem: String
-}
+//struct Compra: Codable {
+//    let nome: String
+//    let estado: String
+//    let valor: Double
+//    let cartao: Bool
+//    let imagem: String
+//}

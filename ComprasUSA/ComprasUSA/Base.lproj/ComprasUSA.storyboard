@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y84-fe-pbJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Th-iq-yc5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--AjustesVC-->
         <scene sceneID="7HV-Ra-fuL">
             <objects>
-                <viewController storyboardIdentifier="AjustesID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y84-fe-pbJ" userLabel="AjustesVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AjustesID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y84-fe-pbJ" userLabel="AjustesVC" customClass="EstadosViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nab-Tc-Yy5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,7 @@
                                 <state key="normal" title="Adicionar estado"/>
                                 <connections>
                                     <action selector="AdicionaEstadoW:" destination="Myq-wk-2ds" eventType="touchUpInside" id="ona-8F-VdZ"/>
+                                    <action selector="adicionar:" destination="Y84-fe-pbJ" eventType="touchUpInside" id="UQm-we-vt2"/>
                                     <action selector="adicionarEstado:" destination="Myq-wk-2ds" eventType="touchUpInside" id="Ylc-RH-4as"/>
                                 </connections>
                             </button>
@@ -112,6 +113,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jLL-h4-xzV"/>
                     </view>
+                    <connections>
+                        <outlet property="tableViewe" destination="UaI-z9-bK2" id="ae8-P4-92Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czA-4g-1ta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Myq-wk-2ds" userLabel="Exit" sceneMemberID="exit"/>
@@ -122,11 +126,16 @@
         <scene sceneID="SnW-fy-gNl">
             <objects>
                 <tableViewController storyboardIdentifier="ComprasID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Th-iq-yc5" userLabel="Compras View Controller" customClass="ComprasTableViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FVk-rg-zZi">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FVk-rg-zZi" customClass="CompraTableViewCell" customModule="ComprasUSA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="eNw-Wb-zPC">
+                            <rect key="frame" x="0.0" y="162" width="414" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="compraCell" id="FaG-JA-p2h" customClass="CompraTableViewCell" customModule="ComprasUSA">
                                 <rect key="frame" x="0.0" y="28" width="414" height="106"/>
@@ -186,6 +195,14 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="ibCartao" destination="ds8-dR-E7z" id="2TZ-dv-vuc"/>
+                                    <outlet property="ibEstado" destination="euN-mj-lDK" id="0Q0-Ht-gMF"/>
+                                    <outlet property="ibNome" destination="IyJ-Rx-110" id="pdO-Va-kJA"/>
+                                    <outlet property="ibValor" destination="LFj-yc-zlf" id="SJM-aC-gTg"/>
+                                    <outlet property="ivImagem" destination="Fsl-bV-4I4" id="MhO-NJ-ZhQ"/>
+                                    <segue destination="yCi-HI-RhG" kind="show" id="tQ4-1W-CyV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -198,6 +215,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75Z-gn-MJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1902.8985507246377" y="375"/>
+        </scene>
+        <!--Compra View Controller-->
+        <scene sceneID="lUf-t7-Vzq">
+            <objects>
+                <viewController id="yCi-HI-RhG" customClass="CompraViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8iy-Ll-1tc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-PL-bZD">
+                                <rect key="frame" x="20" y="433" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-yV-hky">
+                                <rect key="frame" x="20" y="484" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAt-Ww-3KV">
+                                <rect key="frame" x="20" y="533" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq1-zI-EXO">
+                                <rect key="frame" x="20" y="582" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dC-Fj-L03">
+                                <rect key="frame" x="20" y="631" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-H5-RWa">
+                                <rect key="frame" x="20" y="680" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-4J-T6K">
+                                <rect key="frame" x="0.0" y="88" width="414" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Itx-4J-T6K" secondAttribute="height" multiplier="207:158" id="Ta2-rR-b0a"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Itx-4J-T6K" firstAttribute="top" secondItem="SUf-Vq-zNc" secondAttribute="top" id="1EE-ZZ-mUW"/>
+                            <constraint firstItem="8dC-Fj-L03" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="2zd-y4-KSe"/>
+                            <constraint firstItem="8dC-Fj-L03" firstAttribute="top" secondItem="Zq1-zI-EXO" secondAttribute="bottom" constant="22" id="5ut-K3-prN"/>
+                            <constraint firstItem="gZZ-yV-hky" firstAttribute="top" secondItem="b8m-PL-bZD" secondAttribute="bottom" constant="22" id="8C2-Ai-9m5"/>
+                            <constraint firstItem="b8m-PL-bZD" firstAttribute="top" secondItem="SUf-Vq-zNc" secondAttribute="top" constant="345" id="EeZ-Bj-FQN"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="lAt-Ww-3KV" secondAttribute="trailing" constant="20" id="Ev3-ap-kyR"/>
+                            <constraint firstItem="gZZ-yV-hky" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="OWo-ZV-GiL"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="8dC-Fj-L03" secondAttribute="trailing" constant="20" id="PcY-0k-jCS"/>
+                            <constraint firstItem="Itx-4J-T6K" firstAttribute="top" secondItem="SUf-Vq-zNc" secondAttribute="top" id="QT9-ka-pEu"/>
+                            <constraint firstItem="lAt-Ww-3KV" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="Yxa-OC-oSh"/>
+                            <constraint firstItem="Itx-4J-T6K" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" id="ZNX-W2-iHj"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="Zq1-zI-EXO" secondAttribute="trailing" constant="20" id="ZhM-X1-ZRy"/>
+                            <constraint firstItem="lAt-Ww-3KV" firstAttribute="top" secondItem="gZZ-yV-hky" secondAttribute="bottom" constant="22" id="dRm-a3-R3Q"/>
+                            <constraint firstItem="Zq1-zI-EXO" firstAttribute="top" secondItem="lAt-Ww-3KV" secondAttribute="bottom" constant="22" id="dkq-ZB-kdn"/>
+                            <constraint firstItem="lAt-Ww-3KV" firstAttribute="top" secondItem="gZZ-yV-hky" secondAttribute="bottom" constant="22" id="eaW-DK-Mc8"/>
+                            <constraint firstItem="Itx-4J-T6K" firstAttribute="trailing" secondItem="SUf-Vq-zNc" secondAttribute="trailing" id="gBh-QH-5kb"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="sRJ-H5-RWa" secondAttribute="trailing" constant="20" id="gjU-7A-8nC"/>
+                            <constraint firstItem="sRJ-H5-RWa" firstAttribute="top" secondItem="8dC-Fj-L03" secondAttribute="bottom" constant="22" id="hpG-uh-9cs"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="gZZ-yV-hky" secondAttribute="trailing" constant="20" id="k1T-Ez-SYK"/>
+                            <constraint firstItem="b8m-PL-bZD" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="nvv-Rn-olB"/>
+                            <constraint firstItem="sRJ-H5-RWa" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="ofS-tk-w01"/>
+                            <constraint firstItem="Zq1-zI-EXO" firstAttribute="leading" secondItem="SUf-Vq-zNc" secondAttribute="leading" constant="20" id="tyQ-bB-rPZ"/>
+                            <constraint firstItem="SUf-Vq-zNc" firstAttribute="trailing" secondItem="b8m-PL-bZD" secondAttribute="trailing" constant="20" id="xwg-HM-ows"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SUf-Vq-zNc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mgb-Wn-ISl"/>
+                    <connections>
+                        <outlet property="ivImagem" destination="Itx-4J-T6K" id="yBq-wz-HQt"/>
+                        <outlet property="lbCartao" destination="lAt-Ww-3KV" id="KqL-26-92W"/>
+                        <outlet property="lbCotacao" destination="8dC-Fj-L03" id="t1v-Z9-ap9"/>
+                        <outlet property="lbEstado" destination="Zq1-zI-EXO" id="dMR-0b-aYT"/>
+                        <outlet property="lbIOF" destination="sRJ-H5-RWa" id="h89-pF-Ie0"/>
+                        <outlet property="lbNome" destination="b8m-PL-bZD" id="6US-C8-bi4"/>
+                        <outlet property="lbValor" destination="gZZ-yV-hky" id="dV3-gw-qpL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXK-4m-bOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750.7246376811595" y="375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WmA-dZ-SWn">
@@ -248,7 +358,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-fJ-JTD">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Compras" image="bag" catalog="system" selectedImage="bag" id="Ra7-Wp-o9W"/>
@@ -292,7 +402,7 @@
         <!--CadastrarProdutoVC-->
         <scene sceneID="3Dh-IK-Jy5">
             <objects>
-                <viewController storyboardIdentifier="CadastrarProdutoID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0EN-CX-Ixw" userLabel="CadastrarProdutoVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CadastrarProdutoID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0EN-CX-Ixw" userLabel="CadastrarProdutoVC" customClass="CompraRegisterViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GhL-Sm-Lx2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,6 +453,9 @@
                                 <state key="normal" title="CADASTRAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCadastrar:" destination="0EN-CX-Ixw" eventType="touchUpInside" id="z5g-vh-iza"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="Nome do produto" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1j8-XX-Eth">
                                 <rect key="frame" x="20" y="108" width="374" height="34"/>
@@ -403,11 +516,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bNK-Nk-rmj"/>
                     </view>
+                    <connections>
+                        <outlet property="ivImagem" destination="xPA-1i-aLY" id="mXB-CQ-Ofr"/>
+                        <outlet property="selecionaImagem" destination="xPA-1i-aLY" id="hih-zX-54D"/>
+                        <outlet property="tfCartao" destination="fdB-Cp-xw8" id="Mqw-qV-AyV"/>
+                        <outlet property="tfEstado" destination="hfg-6I-BPl" id="1IF-Mc-p8j"/>
+                        <outlet property="tfNome" destination="1j8-XX-Eth" id="6Fd-pR-WhL"/>
+                        <outlet property="tfValor" destination="VCO-Ee-iPf" id="Ggh-GD-fRf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TZ-rN-sAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zK4-W0-FEx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="375"/>
+            <point key="canvasLocation" x="2751" y="1027"/>
         </scene>
     </scenes>
     <resources>

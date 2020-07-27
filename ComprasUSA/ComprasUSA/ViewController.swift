@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var compra:Compra!
+    
     @IBAction func AdicionaEstadoW(_ sender: Any) {
   /*      let alertController = UIAlertController(title: "Add new tag", message: nil, preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "Add", style: .default) { (_) in
@@ -27,21 +29,20 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
         */
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CompraRegisterViewController{
+            vc.compra = compra
+        }
+    }
+   
 }
